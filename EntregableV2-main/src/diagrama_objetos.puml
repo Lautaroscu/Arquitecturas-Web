@@ -1,0 +1,25 @@
+@startuml
+object alumno1 {
+  nroLibreta = 123
+  dni = 12345678
+  nombre = "Juan"
+  apellido = "Pérez"
+  edad = 21
+  ciudad_de_residencia = "Tandil"
+  genero = "Masculino"
+}
+
+object carrera1 {
+  id_carrera = 1
+  nombre = "Ingeniería"
+}
+
+object inscripcion1 {
+  nroLibreta = 123
+  fechaInscripcion = "2024-09-30"
+  seGraduo = false
+}
+
+alumno1 --> inscripcion1 : está inscrito
+carrera1 --> inscripcion1 : pertenece a
+@enduml
